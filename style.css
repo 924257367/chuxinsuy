@@ -23,3 +23,17 @@ section {
   background-color: white;
   border-radius: 8px;
 }
+/* 悬停放大效果 */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* 渐入动画 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+section {
+  animation: fadeIn 1s;
+}
